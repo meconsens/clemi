@@ -9,11 +9,11 @@ function App() {
       <style>
       {`
       html, body {
-        background-color: #252839 !important;
+        background-color: #ADD8E6 !important;
       }
       p {
         align-content: center;
-        background-color: #495285;
+        background-color: #ADD8E6;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -28,19 +28,26 @@ function App() {
     `}
     </style>
 
-      <Header as='h2' inverted icon textAlign='center'>
-        <Icon medium color="olive" name='dollar sign' />
-        Price Checkout Calculator
+      <Header as='h1' inverted icon textAlign='center'>
+        Clementina Consens
         <Header.Subheader>
-          Add some items to your cart to calculate their price.
+          Vulnerable, la vida verdadera, como un poema a punto de nacer, verdadero ~ Ida Vitale
         </Header.Subheader>
       </Header>
     <Divider />     
     <Grid columns={3} divided>
       <Grid.Row>
+      <Image src='/images/clemi.PNG' size='medium' />
+      <Image src='/images/clemi.PNG' size='medium' />
+      <Image src='/images/clemi.PNG' size='medium' />
       </Grid.Row>
-
+      <Image src='/images/clemi.PNG' size='medium' />
+      <Image src='/images/clemi.PNG' size='medium' />
+      <Image src='/images/clemi.PNG' size='medium' />
       <Grid.Row>
+      <Image src='/images/clemi.PNG' size='medium' />
+      <Image src='/images/clemi.PNG' size='medium' />
+      <Image src='/images/clemi.PNG' size='medium' />
       </Grid.Row>
     </Grid>
     <Divider />
