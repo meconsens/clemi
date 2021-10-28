@@ -1,7 +1,8 @@
 import './App.css';
-import React, { useState } from 'react'
+import React from 'react'
 import 'semantic-ui-css/semantic.min.css'
-import { Grid, Button, Container, Label, Modal, Form, Segment, Header, Input, Image, Icon, Divider} from 'semantic-ui-react'
+import clemi from './images/clemi.jpg'
+import { Grid,  Container, Divider,  Header, Image} from 'semantic-ui-react'
 
 function App() {
   return (
@@ -28,29 +29,39 @@ function App() {
     `}
     </style>
 
-      <Header as='h1' inverted icon textAlign='center'>
+    <Grid>
+    <Grid.Row/>
+    </Grid>
+    <Grid columns={3} >
+      <Grid.Column>
+      <Image as='a' href='https://www.instagram.com/clementiddies/?hl=en' src={clemi} size='medium'  />
+      </Grid.Column>
+      <Grid.Column>
+      <Image as='a' href='https://www.instagram.com/clementiddies/?hl=en' src={clemi} size='medium'  />
+      </Grid.Column>
+      <Grid.Column>
+      <Image as='a' href='https://www.instagram.com/clementiddies/?hl=en' src={clemi} size='medium'  />
+      </Grid.Column>
+    </Grid>
+    <Header as='h1' textAlign='center'>
         Clementina Consens
         <Header.Subheader>
           Vulnerable, la vida verdadera, como un poema a punto de nacer, verdadero ~ Ida Vitale
         </Header.Subheader>
-      </Header>
-    <Divider />     
-    <Grid columns={3} divided>
+      </Header>  
+      <Grid columns={3}>
+      <Grid.Column>
+      <Image as='a' href='https://www.instagram.com/clementiddies/?hl=en' src={clemi} size='medium'  />
+      </Grid.Column>
+      <Grid.Column>
+      <Image as='a' href='https://www.instagram.com/clementiddies/?hl=en' src={clemi} size='medium'  />
+      </Grid.Column>
+      <Grid.Column>
+      <Image as='a' href='https://www.instagram.com/clementiddies/?hl=en' src={clemi} size='medium'  />
+      </Grid.Column>
       <Grid.Row>
-      <Image src='/images/clemi.PNG' size='medium' />
-      <Image src='/images/clemi.PNG' size='medium' />
-      <Image src='/images/clemi.PNG' size='medium' />
       </Grid.Row>
-      <Image src='/images/clemi.PNG' size='medium' />
-      <Image src='/images/clemi.PNG' size='medium' />
-      <Image src='/images/clemi.PNG' size='medium' />
-      <Grid.Row>
-      <Image src='/images/clemi.PNG' size='medium' />
-      <Image src='/images/clemi.PNG' size='medium' />
-      <Image src='/images/clemi.PNG' size='medium' />
-      </Grid.Row>
-    </Grid>
-    <Divider />
+    </Grid>   
   </Container>
   );
 }
