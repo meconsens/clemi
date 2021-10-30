@@ -41,7 +41,7 @@ function App() {
     <Grid.Column/>
     <Grid.Column>
       <Header centered as='h1' textAlign='center'>
-        Clementina Consens
+        Clementina Consens {Platform.OS}
         <Header.Subheader centered>
           Vulnerable, la vida verdadera, como un poema a punto de nacer, verdadero ~ Ida Vitale
         </Header.Subheader>
