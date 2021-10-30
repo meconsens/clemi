@@ -85,7 +85,7 @@ function App() {
       <Grid.Row>
       </Grid.Row>
     </Grid>   
-    </> : null }
+    </> : <p> Not for web </p> }
   </Container> 
   );
 }
