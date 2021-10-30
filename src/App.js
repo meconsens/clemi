@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import 'semantic-ui-css/semantic.min.css'
 import clemi from './images/clemi.jpg'
 import ironself from './images/ironself.jpeg'
@@ -7,10 +7,14 @@ import clemitree from './images/clemitree.PNG'
 import rnr from './images/rnr.PNG'
 import bottom from './images/bottom.PNG'
 import { Grid,  Container, Reveal, Divider, Embed, List, Segment, Header, Card, Image} from 'semantic-ui-react'
+import { Dimensions, Platform, PixelRatio } from 'react-native';
+
 
 function App() {
-  return (
+  return ( 
     <Container>
+      {(Platform.OS === 'web')?
+      <>
       <style>
       {`
       html, body {
@@ -32,7 +36,6 @@ function App() {
     }
     `}
     </style>
-
     <Grid columns={3} >
     <Grid.Row/>
     <Grid.Column/>
@@ -82,13 +85,15 @@ function App() {
       <Grid.Row>
       </Grid.Row>
     </Grid>   
-  </Container>
+    </> : null }
+  </Container> 
   );
 }
 
 
 const PhotoItem = ({imageType, role, project, header, description, link, list, ...props }) => {
   return (
+    <Container >
     <Grid.Column>
       <Card.Group>
         <Reveal animated='move'>
@@ -129,6 +134,7 @@ const PhotoItem = ({imageType, role, project, header, description, link, list, .
       </Reveal>
       </Card.Group>
     </Grid.Column>
+    </Container>
   )
 }
 
